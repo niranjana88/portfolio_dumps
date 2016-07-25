@@ -1,0 +1,24 @@
+
+
+Author:              Anand Niranjan
+Contact:             niranjan.a.88@gmail.com
+Website:             http://analyticsfit.wordpress.com
+Twitter:             @niranjan9
+Location:            Charlotte, NC, USA
+Contributions:       Design, HTML, CSS, JS
+
+
+
+/* SITE */
+
+Language:            English
+Standards:           HTML5, CSS3
+Components:          Modernizr, jQuery, etc.
+CMS:                 Static
+Tools:               Gulp, NPM
+IDE:                 PHP Storm
+Built on:            Red Hat Linux
+
+
+
+/* THANKS */
