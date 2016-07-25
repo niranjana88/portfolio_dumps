@@ -1,0 +1,2551 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Anand Niranjan - Data Scientist & Analyst; DBA</title>
+    <link>https://davidhellmann.com/</link>
+    <atom:link href="https://raw.githubusercontent.com/niranjana88/portfolio_dumps/master/rss" rel="self" type="application/rss+xml" />
+    <description>Niranjan is a self-educated Data Scientist, SQL Data analyst & db Admin with over four years work experience. Currently he is pursuing Master's in computer science at University of North Carolina at Charlotte.</description>
+    <language>en-us</language>
+    <pubDate>Mon, 25 Jul 2016</pubDate>
+    <lastBuildDate>Mon, 25 Jul 2016</lastBuildDate>
+
+        <item>
+      <title>2016 Teradata University Network Analytics Challenge</title>
+     <!-- <link>https://davidhellmann.com/blog/development/bodyclass-per-javascript-setzen-um-css-verhalten-zu-steuern/</link> -->
+      <pubDate>Sat, 24 Jul 2016</pubDate>
+      <author>anandniranjan</author>
+     <!-- <guid>https://davidhellmann.com/blog/development/bodyclass-per-javascript-setzen-um-css-verhalten-zu-steuern/</guid> -->
+      <description>
+        <![CDATA[
+          <p>This is the third annual analytics challenge conducted by Teradata University Network (TUN) and it provided me an opportunity to present my business analytics research and application cases to professionals in the Business Analytics community. My projects have incorporated Data Science and Analytics, Big Data, Business and Marketing Analytics.</p>
+
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>This is the third annual analytics challenge conducted by Teradata University Network (TUN) and it provided me an opportunity to present my business analytics research and application cases to professionals in the Business Analytics community. My projects have incorporated Data Science and Analytics, Big Data, Business and Marketing Analytics.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>New Gadget: Suunto Ambit3 Peak HR</title>
+      <link>https://davidhellmann.com/blog/gadgets/new-gadget-suunto-ambit3-peak-hr/</link>
+      <pubDate>Sat, 18 Jun 2016 23:16:43 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/gadgets/new-gadget-suunto-ambit3-peak-hr/</guid>
+      <description>
+        <![CDATA[
+          <p>Letzte Woche war ich Radfahren und habe dabei leider meinen Garmin Edge 510 (<a href="http://amzn.to/1WUHnNa" title="Garmin Edge 510" target="_blank">Affiliate Link</a>) verloren. Dabei muss man noch erwähnen, dass es auch sau dumm von mir war, den Garmin ans Rad zu packen, da eine Nase der Halterung abgebrochen war. Immerhin knapp 15km hat er aber gehalten. Jetzt liegt er wahrscheinlich irgendwo im Gebüsch oder sogar in einem kleinen Bach… Ärgerlich! ABER… Türe zu… Türe auf…</p>
+
+                    
+                    <img src="https://davidhellmann.com/uploads/images/new-gadget-suunto-ambit3-peak-hr-3589/_1280x800_crop_top-center_80/suunto_ambit3_002.jpg" width="1280" height="800" alt="New Gadget: Suunto Ambit3 Peak HR">
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>UCI Downhill Worldcup Leogang 2016</title>
+      <link>https://davidhellmann.com/blog/photography/uci-downhill-worldcup-leogang-2016/</link>
+      <pubDate>Sun, 12 Jun 2016 19:00:00 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/photography/uci-downhill-worldcup-leogang-2016/</guid>
+      <description>
+        <![CDATA[
+          <p>Es war 2015 als ich schon nach Leogang zum Downhill Worldcup wollte aber es sollte nicht sein. Urlaub lag in der Luft und so musste ich das auf 2016 verschieben. Heute war es dann soweit und ich konnte ein Rennen aus nächster Nähe erleben und es war…</p>
+
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>Thomas fuhr. Ich machte Fotos. BMX in Barcelona.</title>
+      <link>https://davidhellmann.com/blog/biking/thomas-fuhr-ich-machte-fotos-bmx-in-barcelona/</link>
+      <pubDate>Mon, 06 Jun 2016 08:00:00 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/biking/thomas-fuhr-ich-machte-fotos-bmx-in-barcelona/</guid>
+      <description>
+        <![CDATA[
+          <p>Der nächste Barcelona Artikel? Ja man, BMX Junge! Als ich mir Anfang des Jahres ein BMX kaufte stand der Plan schon, zur OFFF zu fahren und das BMX einzupacken. Thomas und N. waren auch mit an Board und so kam es wie immer. Die anderen fuhren und ich machte ein paar Fotos. Sind wir ehrlich… Meine fahrerischen Möglichkeiten wurden über die Jahre sicher nicht besser aber der Spaß, mit einem viel zu kleinen Fahrrad rumzufahren, ist nach wie vor vorhanden. Und darauf kommt es ja letztendlich an. </p>
+
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>OFFF 2016 — Gelassen läufts</title>
+      <link>https://davidhellmann.com/blog/blogging/offf-2016-gelassen-laeufts/</link>
+      <pubDate>Sat, 04 Jun 2016 15:55:00 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/blogging/offf-2016-gelassen-laeufts/</guid>
+      <description>
+        <![CDATA[
+          <p>Dieses Jahr ist mein zweites mal auf der OFFF wobei ich die ganze Zeit denke, dass es das dritte mal ist. War ich das erste mal noch total aufgeregt was denn alles passieren würde, ist es diesmal eher Routine und ein Stück weit auch vorhersehbar, was passieren wird. </p>
+
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>Sass Breakpoint Mixin</title>
+      <link>https://davidhellmann.com/blog/development/sass-breakpoint-mixin/</link>
+      <pubDate>Mon, 16 May 2016 17:39:00 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/development/sass-breakpoint-mixin/</guid>
+      <description>
+        <![CDATA[
+          <p>Das ist wohl das von mir am häufigsten genutzt Mixin was ich habe. OK, vielleicht liegt das Mixin für Columns noch etwas weiter vorn… Aber so genau nehmen wir das jetzt mal nicht. Warum das Mixin so häufig zum Einsatz kommt ist recht einfach erklärt. Ich hänge die Breakpoints direkt an die jeweilige Klasse bzw. das Element. Führt wohl zu etwas mehr CSS-Code der dadurch aber auch einfacher zu verstehen und pflegen ist. Kommen wir zum Mixin und wie ich es nutze. </p>
+
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>AWWWARDS — Site of the day</title>
+      <link>https://davidhellmann.com/blog/blogging/awwwards-site-of-the-day/</link>
+      <pubDate>Thu, 12 May 2016 21:46:00 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/blogging/awwwards-site-of-the-day/</guid>
+      <description>
+        <![CDATA[
+          <p>Whoop Whoop! Oder anders gesagt, hat es mich dann doch überrascht SOTD zu werden. Zum einen eben, dass es passiert ist und zum anderen, dass es so schnell ging. Es hat mich natürlich gefreut,  <a href="http://www.awwwards.com/sites/david-hellmann-desginer-devloper" target="_blank">Site of the Day</a> zu werden. </p>
+
+                    
+                    <img src="https://davidhellmann.com/uploads/images/awwwards-site-of-the-day-3439/_1280x800_crop_top-center_80/awwwards_site-of-the-day-2016-05-12.png" width="1280" height="800" alt="AWWWARDS — Site of the day">
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>AWWWARDS — Honorable Mention</title>
+      <link>https://davidhellmann.com/blog/blogging/awwwards-honorable-mention/</link>
+      <pubDate>Tue, 10 May 2016 07:30:00 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/blogging/awwwards-honorable-mention/</guid>
+      <description>
+        <![CDATA[
+          <p>We are happy to inform you that your site <strong>David Hellmann — Designer &amp; Developer </strong>has received an Honorable Mention. See it <a href="http://www.awwwards.com/sites/david-hellmann-desginer-devloper" target="_blank">here</a>.</p>
+
+                    
+                    <img src="https://davidhellmann.com/uploads/images/awwwards-honorable-mention-3433/_1280x800_crop_top-center_80/davidhellmann_awwwards_goldie.jpg" width="1280" height="800" alt="AWWWARDS — Honorable Mention">
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>#May1Reboot — Alles neu bringt der Mai. Relaunch baby!</title>
+      <link>https://davidhellmann.com/blog/blogging/may1reboot-alles-neu-bringt-der-mai-relaunch-baby/</link>
+      <pubDate>Sun, 01 May 2016 12:20:00 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/blogging/may1reboot-alles-neu-bringt-der-mai-relaunch-baby/</guid>
+      <description>
+        <![CDATA[
+          <p>Blut Schweiß und Tränen könnte man sagen oder auch einfach nur verrückt. Es war ziemlich genau vor acht Jahren als <a href="https://davidhellmann.com/blog/blogging/es-wurde-vollbracht/">dieser</a> Artikel hier bei mir online ging. Der Titel war: <strong>Es wurde vollbracht. </strong>Damals ging meine Website das erste mal mit einem CMS online, dieses, wie manch einer sicher richtig vermuten mag, WordPress war. In den acht Jahren gab es denn unzählige Varianten meiner Website aber immer wurde sie angetrieben vom gleichen CMS, bis jetzt!</p>
+
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+        <item>
+      <title>2015 — Ein kleiner Rückblick</title>
+      <link>https://davidhellmann.com/blog/blogging/2015-ein-kleiner-rueckblick/</link>
+      <pubDate>Wed, 30 Dec 2015 23:00:00 +0000</pubDate>
+      <author>anandniranjan</author>
+      <guid>https://davidhellmann.com/blog/blogging/2015-ein-kleiner-rueckblick/</guid>
+      <description>
+        <![CDATA[
+          <p>So, schnell noch meinen kleinen 2015 Rückblick runter schreiben um es den anderen (<a href="http://davidblum.ch/post/136134436638/mein-2015">David</a>, <a href="https://medium.com/@vanschneider/my-2015-the-year-of-change-e90c71a50a1e#.4v70u7k8q">Tobias</a>, <a href="https://www.facebook.com/notes/herrlich-media/was-f%C3%BCr-ein-jahr/1149615525056605">Fynn</a> {{endless.Name}}) gleich zu tun. Die drei waren meine Motivation es doch noch zu tun, danke dafür! Jetzt aber los…<br /></p>
+
+                    
+                    <img src="https://davidhellmann.com/uploads/images/2015-ein-kleiner-rueckblick-2907/_1280x800_crop_top-center_80/2015_gbf.jpg" width="1280" height="800" alt="2015 — Ein kleiner Rückblick">
+                  ]]>
+      </description>
+      <content>
+        <![CDATA[
+                                                        <div class="contentBuilder  contentBuilder--blog">
+              
+                              
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Seit ein paar Monaten bin ich ja mit meiner eigenen kleinen <a href="https://www.npmjs.com/package/generator-dhboilerplate" target="_blank">Boilerplate</a> unterwegs, die von mir als Grundlage für neue Projekte genutzt wird. Mit dabei sind auch paar kleinere Javascript Snippets die ich ständig im Einsatz habe. Eines davon ist <strong>bodyclass.js </strong>was im Grunde nichts weiter macht, als beim Laden der Website ein paar Klassen zum body hinzufügt.</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--headline  js_waypointTrigger">
+    <div class="blockInner  blockInner--headline  left">
+    <h3>bodylclass.js</h3>
+  </div>
+</div>
+
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        /**
+ * Set Body Classes
+ */
+
+var _body     = document.querySelector(&#039;body&#039;),
+    _steps    = 1000,
+    _duration = 3000,
+    _timer    = 0,
+    _i        = 1;
+
+
+while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Nehmen wir das ganze doch mal etwas auseinander… </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        var _body     = document.querySelector(&#039;body&#039;),
+     _steps    = 1000,
+     _duration = 3000,
+     _timer    = 0,
+     _i        = 1;
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Im ersten Schritt werden die Variablen gesetzt. <strong class="redactor-inline-converted">_body</strong> ist dabei das Ziel wo die Klassen hinzugefügt werden. <strong class="redactor-inline-converted">_steps</strong> und <strong class="redactor-inline-converted">_duration</strong> stehen in Verbindung. <strong class="redactor-inline-converted">_duration</strong> ist dabei der höchstmögliche Wert in ms und <strong class="redactor-inline-converted">_steps</strong> gibt an in welchen ms Sprüngen letztendlich hochgezählt wird. </p>
+
+<p><strong class="redactor-inline-converted">_timer</strong> dient zum hoch zählen der <strong class="redactor-inline-converted">_steps</strong> bis <strong class="redactor-inline-converted">_duration</strong> erreicht wurde. <strong class="redactor-inline-converted">_i</strong> ist ein einfach Zähler, der die <strong class="redactor-inline-converted">_steps</strong> letztendlich multipliziert und es an einen Klassennamen hängt. </p>
+
+
+
+
+
+<p>Die while Schleife läuft jetzt solange durch bis <strong class="redactor-inline-converted">_steps</strong> kleiner gleich <strong class="redactor-inline-converted">_duration</strong> ist. </p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-javascript">
+      <code class="language-javascript">
+        while (_timer &lt;= _duration) {
+
+  if (_timer == 0) {
+
+    _body.classList.add(&#039;is_ready&#039;);
+
+  } else {
+
+    setTimeout(function() {
+
+      _body.classList.add(&#039;is_now_&#039; + (_i * _steps));
+      _i++;
+
+    }, _timer);
+
+  }
+
+  _timer = _timer  + _steps;
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Dabei wird <strong class="redactor-inline-converted">_timer</strong> immer wieder mit dem <strong class="redactor-inline-converted">_steps</strong> Wert addiert. Innerhalb der while Schleife ist eine weitere if Abfrage vorhanden. Dort wird geprüft ob <strong class="redactor-inline-converted">_timer</strong> gleich 0 ist und falls das der Fall ist, bekommt der body die Klasse "<strong class="redactor-inline-converted">is_ready</strong>" hinzugefügt. Das heißt unsere Javascript Datei ist geladen und ausgeführt. Wenn <strong class="redactor-inline-converted">_timer</strong> größer 0 ist wird der else Teil ausgeführt. Dort wird dann die setTimeout Funktion so oft aufgerufen bis die bis <strong class="redactor-inline-converted">_timer</strong> größer als <strong class="redactor-inline-converted">_duration</strong> ist. In dem Beispiel oben wäre das genau drei mal.</p>
+
+<p>Letztendlich landen hier dann zusätzlich zur "<strong>is_ready</strong>" Klasse auch noch "<strong class="redactor-inline-converted">is_now_1000, is_now_2000, is_now_3000</strong>" im body Element. Letztendlich recht unspektakulär aber bei mir wie gesagt des öfteren im Einsatz. Das mir wichtige dabei ist, dass ich etwas habe was fix ist wovon ich ausgehen kann um dann Sachen wie folgende zu machen:</p>
+  </div>
+
+  
+</div>
+
+          
+        <div class="block  block--code  js_waypointTrigger">
+  <div class="blockInner  blockInner--code">
+
+    <pre class="line-numbers  language-scss">
+      <code class="language-scss">
+        .aboutIntro__image {
+  transform: translate3d(0, 200px, 0);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  .is_now_1000 &amp; {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s 0.1s ease-out;
+  }
+}
+
+.aboutIntro__content {
+
+  .copy {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+    }
+
+    .aboutIntro__vertical {
+      transform: translate3d(0, 100px, 0) rotate(-90deg);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, -5px, 0) rotate(-90deg);
+        opacity: 1;
+        transition: all 0.5s 1s ease-out;
+      }
+    }
+  }
+
+  .headline {
+    transform: translate3d(0, 300px, 0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    .is_now_1000 &amp; {
+      transform: translate3d(0, 100px, 0);
+      opacity: 1;
+      transition: all 0.5s 0.35s ease-out;
+    }
+
+    &amp;::before {
+      transform: translate3d(0, 200px, 0);
+      transition: all 0.5s ease-out;
+      opacity: 0;
+
+      .is_now_1000 &amp; {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transition: all 0.5s 0.85s ease-out;
+      }
+    }
+  }
+}
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+          
+        <div class="block  block--copy  js_waypointTrigger">
+  
+  <div class="blockInner  blockInner--copy  blockInner--center">
+    <p>Vielleicht kann ja jemand was damit anfangen. Wenn nicht, dann nicht :) Fragen und Anregungen gern in die Kommentare. </p>
+  </div>
+
+  
+</div>
+
+                    </div>
+                            ]]>
+      </content>
+    </item>
+      </channel>
+</rss>
